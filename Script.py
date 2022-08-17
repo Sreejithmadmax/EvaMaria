@@ -1,56 +1,119 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+    START_TXT = """<b>ʜᴇʏ  {} ʙʀᴏ! \n
+ᴍʏ ɴᴀᴍᴇ ɪꜱ  <a href=https://t.me/Imdbfilter_bot><b>『 ƈɨռɖɛʀɛʟʟǟ™ 』</b></a>  ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 🕊️</b>"""   
+   
+    OWNER_TXT2 = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
+    
+• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴘᴏᴡᴇʀ ᴏꜰ ᴛɢ
+• ᴜꜱᴇʀɴᴀᴍᴇ : <a href=https://t.me/PowerOfTG><b>ᴘᴏᴡᴇʀ ᴏꜰ ᴛɢ</b></a>
+
+⍟───[ 💕 sᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋs 💕 ]───⍟
+
+• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴛᴇᴀᴍ ᴇᴠᴀᴍᴀʀɪᴀ
+• ᴛᴇᴀᴍ ʟɪɴᴋ : <a href=https://t.me/TeamEvaMaria>ᴛᴇᴀᴍ ᴇᴠᴀᴍᴀʀɪᴀ</a></b>"""
+
+    ENGLISHSPELL_TXT = f"<b>𝖲ᴏʀʀʏ 𝖭ᴏ 𝖥ɪʟᴇ𝗌 𝖶ᴇʀᴇ 𝖥ᴏᴜɴᴅ.\n\n𝖢ʜᴇᴄᴋ 𝖸ᴏᴜʀ 𝖲ᴘᴇʟʟɪɴɢ ɪɴ 𝖦ᴏᴏɢʟᴇ ᴀɴᴅ 𝖳ʀʏ 𝖠ɢᴀɪɴ. ♻️\n\n𝖱ᴇᴀᴅ 𝖨ɴ𝗌ᴛʀᴜᴄᴛɪᴏɴ𝗌 ғᴏʀ ʙᴇᴛᴛᴇʀ 𝖱ᴇ𝗌ᴜʟᴛ𝗌 👇🏻</b>"
+    MAL_TXT = """
+<b>താങ്കൾ ആവശ്യപ്പെട്ട ഫയൽ എനിക്ക് കണ്ടെത്താനായില്ല 😕
+താഴെ പറയുന്ന കാര്യങ്ങളിൽ ശ്രദ്ധിക്കുക...
+
+=> കറക്റ്റ് സ്പെല്ലിംഗിൽ ചോദിക്കുക.
+
+=> ഒ.ടി.ടി പ്ലാറ്റ്ഫോമുകളിൽ റിലീസ് ആകാത്ത സിനിമകൾ ചോദിക്കരുത്.
+
+=> കഴിവതും [സിനിമയുടെ പേര്, ഭാഷ] ഈ രീതിയിൽ ചോദിക്കുക.</b>
+"""  
+    ENG_TXT = """
+<b>I could not find the file you requested 😕
+Pay attention to the following…
+
+=> Ask for correct spelling.
+
+=> Do not ask for movies that are not released on OTT platforms.</b>
+"""
+    HND_TXT = """
+<b>मुझे आपके द्वारा अनुरोधित फ़ाइल नहीं मिली 🙁
+निम्नलिखित बातों पर ध्यान दें…
+
+=> सही वर्तनी के लिए पूछें।
+
+=> उन फिल्मों के बारे में न पूछें जो ओटीटी प्लेटफॉर्म पर रिलीज नहीं होती हैं।</b>
+"""
+    TML_TXT = """
+<b>நீங்கள் கோரிய கோப்பை என்னால் கண்டுபிடிக்க முடியவில்லை 😕
+பின்வருவனவற்றில் கவனம் செலுத்துங்கள்…
+
+=> சரியான எழுத்துப்பிழை கேட்கவும்.
+
+=> OTT இயங்குதளங்களில் வெளியிடப்படாத திரைப்படங்களைக் கேட்க வேண்டாம்.</b>
+"""
+    
+    SPELL_TXT = '<b>🤝 ᴄʜᴏᴏꜱᴇ ʏᴏᴜʀ ᴍᴏᴛʜᴇʀ ᴛᴏᴜɴɢᴇ ᴀɴᴅ ʀᴇᴀᴅ ᴛʜᴇ ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ..👇\n\n🤝 ᴏʀ ꜱᴇᴀʀᴄʜ ɪᴛ ᴏɴ ɢᴏᴏɢʟᴇ ᴜꜱɪɴɢ ᴛʜᴇ ɢᴏᴏɢʟᴇ ʙᴜᴛᴛᴏɴ\n\n🤝 ᴏʀ ʀᴇQᴜᴇꜱᴛ ʜᴇʀᴇ 👉 <a href=https://t.me/UrvashiTheaters_Requests>◥ʊʀʋǟֆɦɨ ȶɦɛǟȶɛʀֆ◤</a></b>'
+
+    OWNER_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
+    
+• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴘᴏᴡᴇʀ ᴏꜰ ᴛɢ
+• ᴜꜱᴇʀɴᴀᴍᴇ : @PowerOfTg
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href=https://t.me/poweroftg>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+
+⍟───[ 📢 ᴜʀᴠᴀꜱʜɪ ᴛʜᴇᴀᴛᴇʀꜱ 📢 ]───⍟</b>
+"""
+    HELP_TXT = """<b>ʜᴇʏ  {} ʙʀᴏ! \n
+ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʜᴇʟᴘ ꜰᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ."""
+
+    ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Imdbfilter_bot>ƈɨռɖɛʀɛʟʟǟ™</b></a>
+👨‍💻 <b>ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/TeamEvamaria>Team Eva Maria</a></b>
+📝 <b>ʟᴀɴɢᴜᴀɢᴇ : <a href=https://t.me/UrvashiTheaters>𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</a></b>
+💾 <b>ᴅᴀᴛᴀ ʙᴀꜱᴇ : <a href=https://t.me/UrvashiTheaters>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a></b>
+📡 <b>ʙᴏᴛ ꜱᴇʀᴠᴇʀ : <a href=https://t.me/UrvashiTheaters>𝙷𝙴𝚁𝙾𝙺𝚄</a></b>
+🛠️ <b>ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : <a href=https://t.me/UrvashiTheaters>v1.0.1 [ 𝙱𝙴𝚃𝙰 ]</b></a>"""
+
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - https://github.com/EvamariaTG/EvaMaria  
 
 <b>DEVS:</b>
 - <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>"""
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
+    MANUELFILTER_TXT = """<u><b>ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀꜱ</b></u>
 
-- Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
+- ꜰɪʟᴛᴇʀ ɪꜱ ᴛʜᴇ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ƈɨռɖɛʀɛʟʟǟ™ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
 
-<b>NOTE:</b>
-1. eva maria should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
+<b><u>ʀᴇQᴜɪʀᴇᴍᴇɴᴛꜱ</u></b>
+1. ƈɨռɖɛʀɛʟʟǟ™ 𝚜𝚑𝚘𝚞𝚕𝚍 𝚑𝚊𝚟𝚎 𝚊𝚍𝚖𝚒𝚗 𝚙𝚛𝚒𝚟𝚒𝚕𝚕𝚊𝚐𝚎.
+2. 𝚘𝚗𝚕𝚢 𝚊𝚍𝚖𝚒𝚗𝚜 𝚌𝚊𝚗 𝚊𝚍𝚍 𝚏𝚒𝚕𝚝𝚎𝚛𝚜 𝚒𝚗 𝚊 𝚌𝚑𝚊𝚝.
+3. 𝚊𝚕𝚎𝚛𝚝 𝚋𝚞𝚝𝚝𝚘𝚗𝚜 𝚑𝚊𝚟𝚎 𝚊 𝚕𝚒𝚖𝚒𝚝 𝚘𝚏 𝟼𝟺 𝚌𝚑𝚊𝚛𝚊𝚌𝚝𝚎𝚛𝚜.
 
-<b>Commands and Usage:</b>
+<b><u>ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ᴜꜱᴀɢᴇ</u></b>
 • /filter - <code>add a filter in chat</code>
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
+    BUTTON_TXT = """<b><u>ʙᴜᴛᴛᴏɴꜱ</b></u>
 
-- Eva Maria Supports both url and alert inline buttons.
+- ƈɨռɖɛʀɛʟʟǟ™ 𝚂𝚞𝚙𝚙𝚘𝚛𝚝𝚜 𝚋𝚘𝚝𝚑 𝚞𝚛𝚕 𝚊𝚗𝚍 𝚊𝚕𝚎𝚛𝚝 𝚒𝚗𝚕𝚒𝚗𝚎 𝚋𝚞𝚝𝚝𝚘𝚗𝚜.
 
 <b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
+1. 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝚠𝚒𝚕𝚕 𝚗𝚘𝚝 𝚊𝚕𝚕𝚘𝚠𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚜𝚎𝚗𝚍 𝚋𝚞𝚝𝚝𝚘𝚗𝚜 𝚠𝚒𝚝𝚑𝚘𝚞𝚝 𝚊𝚗𝚢 𝚌𝚘𝚗𝚝𝚎𝚗𝚝, 𝚜𝚘 𝚌𝚘𝚗𝚝𝚎𝚗𝚝 𝚒𝚜 𝚖𝚊𝚗𝚍𝚊𝚝𝚘𝚛𝚢.
+2. ƈɨռɖɛʀɛʟʟǟ™ 𝚜𝚞𝚙𝚙𝚘𝚛𝚝𝚜 𝚋𝚞𝚝𝚝𝚘𝚗𝚜 𝚠𝚒𝚝𝚑 𝚊𝚗𝚢 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝚖𝚎𝚍𝚒𝚊 𝚝𝚢𝚙𝚎.
+3. 𝙱𝚞𝚝𝚝𝚘𝚗𝚜 𝚜𝚑𝚘𝚞𝚕𝚍 𝚋𝚎 𝚙𝚛𝚘𝚙𝚎𝚛𝚕𝚢 𝚙𝚊𝚛𝚜𝚎𝚍 𝚊𝚜 𝚖𝚊𝚛𝚔𝚍𝚘𝚠𝚗 𝚏𝚘𝚛𝚖𝚊𝚝.
 
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/EvaMariaBot)</code>
+<b><u>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ</u></b>
+<code>[Button Text](buttonurl:link)</code>
 
-<b>Alert buttons:</b>
+<b><u>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ</u></b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+    AUTOFILTER_TXT = """<b><u>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</u></b>
 
-<b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. make sure that your channel does not contains camrips, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
+<b><u>ᴍᴜꜱᴛ ʀᴇᴀᴅ</u></b>
+1.<b> നിങ്ങൾക്ക്  സിനിമ ഗ്രൂപ്പ്‌ ഉണ്ടോ സിനിമ ഫയലുകൾ സെർച്ച്‌ ചെയ്ത് കണ്ട് പിടിച്ചു ഗ്രൂപ്പിൽ അയച്ചു ബുദ്ധിമുട്ടുന്നുണ്ടോ....ഇനി ഒന്നുകൊണ്ടും പേടിക്കണ്ട....</b>
+2. <b><a href=http://t.me/Imdbfilter_bot?startgroup=true><b>➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️</b></a>എന്ന ലിങ്കിലോ ബട്ടണിലോ ക്ലിക്ക് ചെയ്ത് ബോട്ട് ഗ്രൂപ്പിൽ അഡ്മിൻ ആകുക...</b>
+3. <b>പിന്നെ സിനിമകൾ എല്ലാം ബോട്ട് തരുന്നതായിരിക്കും</b>
+
+<b><u>ᴍᴜꜱᴛ ʀᴇᴀᴅ[ᴇɴɢ]</u></b>
+1.<b>𝙸𝚝𝚜 𝚅𝚎𝚛𝚢 𝙴𝚊𝚜𝚢..𝙹𝚞𝚜𝚝  <a href=http://t.me/Imdbfilter_bot?startgroup=true><b>ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ</b></a> 𝚆𝚒𝚝𝚑 𝙰𝚍𝚖𝚒𝚗 𝚁𝚒𝚐𝚑𝚝𝚜.. </b>
+2.<b>𝚃𝙷𝙴𝙽 𝙸 𝚆𝚒𝚕𝚕 𝙿𝚛𝚘𝚟𝚒𝚍𝚎 𝙼𝚘𝚟𝚒𝚎𝚜 𝚃𝚑𝚎𝚛𝚎...</b>
+3.<b><u>𝙽𝙱 </u>:𝙱𝙾𝚃 𝙼𝚄𝚂𝚃 𝙱𝙴 𝙸𝙽 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿..</b>
+"""
     CONNECTION_TXT = """Help: <b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
@@ -91,17 +154,28 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
-    LOG_TEXT_G = """#NewGroup
+    STATUS_TXT = """<b>🗂️ ᴛᴏᴛᴀʟ ғɪʟᴇs: <code>{}</code>
+👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
+👥 ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
+📈 ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code>
+📊 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code>
+
+⍟───[ 📢 ᴜʀᴠᴀꜱʜɪ ᴛʜᴇᴀᴛᴇʀꜱ 📢 ]───⍟</b>
+"""
+    LOG_TEXT_G = """🚩NewGroup🚩
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
 """
-    LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}
+    LOG_TEXT_P = """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
+    
+<b>᚛› 𝐈𝐃 - <code>{}</code></b>
+<b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
+"""
+    IMDB_MOVIE_2 = """
+🧿 ᴛɪᴛᴛʟᴇ :  <a href={url}>{title}</a>
+🎭 ɢᴇɴʀᴇ : {genres}
+📆 ʀᴇʟᴇᴀsᴇ : {year}
+
+★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [@ᴜʀᴠᴀꜱʜɪ ᴛʜᴇᴀᴛᴇʀꜱ™](https://t.me/UrvashiTheatersSub)</b>
 """
