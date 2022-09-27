@@ -744,6 +744,18 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
+    btn.insert(0, 
+        [
+            InlineKeyboardButton(f' {search} ', 'reqst1')
+        ]
+    )
+    btn.insert(1, 
+        [
+            InlineKeyboardButton(f'ғɪʟᴇs: {len(files)}', 'movieinfo'),
+            InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'neosub'),
+            InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'moviis')
+        ]
+    )
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
