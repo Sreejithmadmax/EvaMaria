@@ -87,7 +87,7 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-    btn.insert(1, 
+    btn.insert(0, 
         [
             InlineKeyboardButton(f'ғɪʟᴇs: {len(files)}', 'movieinfo'),
             InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'neosub'),
@@ -739,7 +739,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-    btn.insert(1, 
+    btn.insert(0, 
         [
             InlineKeyboardButton(f'ғɪʟᴇs: {len(files)}', 'movieinfo'),
             InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'neosub'),
