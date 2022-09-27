@@ -70,24 +70,13 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    url=await get_shortlink(f"https://t.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
         ]
-    else:
-        btn = [
-            [
-                InlineKeyboardButton(
-                    text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
-                ),
-                InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
-                    callback_data=f'files_#{file.file_id}',
-                ),
-            ]
-            for file in files
-        ]
+    
     btn.insert(0, 
         [
             InlineKeyboardButton(f'ғɪʟᴇs: {len(files)}', 'movieinfo'),
@@ -721,7 +710,8 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    url=await get_shortlink(f"https://t.me/{temp.U_NAME}?start=pre_{file.file_id}")
                 ),
             ]
             for file in files
@@ -731,11 +721,11 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(
                     text=f"{file.file_name}",
-                    callback_data=f'{pre}#{file.file_id}',
+                    url=await get_shortlink(f"https://t.me/{temp.U_NAME}?start=pre_{file.file_id}")
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
-                    callback_data=f'{pre}#{file.file_id}',
+                    callback_data=f'{pre}_#{file.file_id}',
                 ),
             ]
             for file in files
